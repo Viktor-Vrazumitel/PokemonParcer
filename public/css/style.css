@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'); */
+
+*{
+	font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+body{
+	background-image: url('/img/backGround.jpeg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+    background-color: rgb(52, 56, 61);
+	min-height: 100vh;
+	background-attachment:fixed;
+	
+}
+h1{
+	color: rgb(255, 255, 255);
+	margin: 20px auto 0;
+
+	text-align: center;
+}
+h3 {
+	color: rgb(255, 255, 255);
+	margin: 20px auto 0;
+
+	text-align: center;
+}
+.wrapper{
+	position: absolute;
+	width: 320px;
+	left: 45%;
+	margin-left: -160px;
+	top: 50%;
+	margin-top: -75px;
+}
+
+/* === Sign in Form === */
+.signin {
+	height: 90px;
+	width: 300px;
+	border-radius: 8px;
+	position: relative;
+}
+.signin::before {
+	display: block;
+	position: relative;
+	height: 2px;
+	background: rgb(52, 56, 61);
+	content: '';
+	top: 44px;
+	margin-left: 20px;
+	z-index: 2;
+}
+.signin input:first-of-type{
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+.signin input:last-of-type{
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.signin  input[type="text"], .signin  input[type="password"],.signin  input[type="email"], .signin button[type="submit"]{
+	background: rgb(28, 30, 33);
+	box-shadow: inset -100px -100px 0 rgb(28, 30, 33); /*Prevent yellow autofill color*/
+	color: rgb(232, 237, 243);
+}
+.signin  input[type="text"], .signin  input[type="password"],.signin  input[type="email"]{
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 45px;
+	border: 0;
+	outline: 0;
+	top: -2px;
+	padding: 0 0 0 20px;
+	font-weight: 700;
+}
+.signin  input[type="text"]:focus, .signin  input[type="password"]:focus{
+	color: rgb(255, 255, 255);
+}
+.signin button[type="submit"]{
+	display: block;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	color: rgb(52, 56, 61);
+	border-radius: 50px;
+	outline: 0;
+	z-index: 3;
+	top: 19px;
+	right: -24px;
+	border: 6px solid rgb(52, 56, 61);
+	font-size: 25px;
+	text-indent: 0px;
+	padding-left: 9px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+.signin button[type="submit"]:hover{
+	color: rgb(0, 126, 165);
+	text-shadow: 0 0 10px rgb(0, 126, 165);
+	cursor: pointer;
+}
+.signin p {
+	color: rgb(97, 96, 79);
+	padding: 0 20px;
+	font-weight: 700;
+	font-size: 12px;
+	margin: 5px 0 0 0;
+}
+.signin p > a{
+	color: rgb(238, 208, 38);
+	text-decoration: none;
+}
+.signin p > a:hover{
+	border-bottom: 1px solid;
+}
+.pokName {
+	color: rgb(226, 183, 73);
+	max-width: 100px;
+	margin: 50px;
+}
+#pokName {
+	color: rgb(226, 183, 73);
+	
+}
+.hide{
+	display: none;
+}
+#conteiner{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+}
+#pageStart{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 600px
+	
+}
+#welcome{
+	margin-left: 200px
+}
+.but{
+	max-width: 70px;
+	max-height: 30px;
+}
+.contPok{
+	min-width: 200px;
+	min-height: 200px;
+	border-bottom: 1px solid rgb(232, 177, 27);
+}
+.image {
+	min-height: 300px;
+	min-width: 300px;
+}
+#searchForm{
+	min-width: 500px;
+}
+#serchPok{
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	align-items: center;
+}
+.pokName{
+	margin: 25px;
+	font-size: 20px;
+}
+
+.pokReg {
+	color: rgb(226, 183, 73);
+	
+}
+.add{
+	margin: 10px;
+}
+.imageS{
+	min-height: 400px;
+	min-width: 400px;
+}
+.heart{
+	max-width: 15px;
+	max-height: 15px;
+	
+}
+
+.addPokem{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+}
+.poColProf{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	margin: 0;
+}
+.imageProf{
+	min-width: 200px;
+	min-height: 400px;
+}
+
+	.buttAdd {
+		position: relative;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+		text-shadow: 0 -1px 1px #cc5500;
+		user-select: none;
+		padding: .8em 2em;
+		outline: none;
+		border-radius: 1px;
+		background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+		background-size: 100% 100%, auto;
+		background-position: 50% 50%;
+		box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+		transition: 0.2s;
+	  }
+	  .buttAdd:hover {
+		background-size: 140% 100%, auto;
+	  }
+	  .buttAdd:active {
+		top: 1px;
+		color: #ffdead;
+		box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+	  }
+
+	  

@@ -1,0 +1,19 @@
+<div>
+<div class="profWelc">
+<h1>Welcome to Profile {{userName}} </h1>
+<h3>You Cards:</h3>
+</div>
+<div class="poColProf">
+{{#each card}}
+<div class="contPok" data-id="{{this.id}}">
+
+            <p class="pokName" id="{{this.id}}">{{this.title}}</p>
+            <img class='imageProf' src='{{this.img}}'>
+            <div>
+            <button  class='buttAdd' name="delete" type="submit">delete</button>
+            <img class='heart'src='/img/pngwingcom.png'>
+            </div>
+        </div>
+        {{/each}}
+        </div>
+        </div>
